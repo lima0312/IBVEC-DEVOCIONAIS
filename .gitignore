@@ -1,0 +1,25 @@
+# Dependências
+node_modules/
+
+# Build
+dist/
+dist_pub/
+
+# Editor / SO
+.DS_Store
+*.log
+.vscode/
+.idea/
+
+# Variáveis de ambiente (nunca versionar segredos)
+.env
+.env.local
+.env.*.local
+
+# Cache de build do TypeScript
+*.tsbuildinfo
+
+# Metadados internos da plataforma Brixly (não fazem parte do código do site)
+.chats/
+.checkpoints/
+.lovable.json

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>IBVEC · Devocionais Diários</title>
+    <meta name="description" content="Devocionais diários da Igreja Batista Viver em Cristo — IBVEC. Palavra, reflexão e oração para o seu dia." />
+    <link rel="icon" type="image/png" sizes="32x32" href="/uploads/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/uploads/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/uploads/favicon-180.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/uploads/favicon-512.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link id="brx-fonts" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700;800&display=swap" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      (function(){
+        function send(message, stack){
+          try{ parent.postMessage({__forge:true, type:'forge-error', message:String(message||'erro'), stack:String(stack||'')}, '*'); }catch(e){}
+        }
+        window.addEventListener('error', function(e){ send(e.message, e.error && e.error.stack); });
+        window.addEventListener('unhandledrejection', function(e){ var r=e.reason; send(r && (r.message||r), r && r.stack); });
+      })();
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
